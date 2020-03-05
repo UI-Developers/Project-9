@@ -3,10 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Experience VR</title>
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <title>Giuseppe Brandi Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/14ad6c33c4.js" crossorigin="anonymous"></script>
@@ -20,15 +18,15 @@
           <li><a href="#">About Me</a></li>
           <li><a href="#">Skills</a></li>
           <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a id="modal-btn" href="#">Contact</a></li>
         </ul>
       </div>
     </header><!--/.main-header-->   
 
     <div class="banner">
-      <img class="img-featured" src="img/member-4.jpg" alt="Giuseppe Brandi">
+      <img class="img-featured" src="img/Giuseppe.jpg" alt="Giuseppe Brandi">
       <h1>Giuseppe Brandi</h1>
-      <p>Front-End Developer | Speaker | Millionaire</p>
+      <p class="strapline">Passionate | Flexible | Self Motivated</p>
     </div>
 
     <div class="intro">
@@ -36,12 +34,16 @@
     </div>
 
     <div class="section__about">
-      <div>
-        <img src="https://fakeimg.pl/450x400/009578/fff/" alt="image" class="about__img">
-      </div>
+      <picture>
+        <source srcset="img/Giuseppe-medium.jpg" media="(min-width: 1024px)">
+        <source srcset="img/Giuseppe-tall.jpg" media="(min-width: 600px)">
+        <img src="img/Giuseppe-small.jpg" alt="Giuseppe with Laptop" class="about__img">
+      </picture>
       <div class="intro">
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p> 
-        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        <p>Hi, my name is Giuseppe and I have been learning Web Development since October 2012.</p>
+        <p>I consider myself more a self-taught student than a Front-End Developer as there is still a lot to learn (it is not imposter syndrome); however, I am passionate about coding and Web Design.</p> 
+        <p>I love to see concepts and ideas turning into shapes and colours, people freely sharing their talents with the world, and dreams becoming reality. Whether you are a <a class="treehouse" href="https://teamtreehouse.com" target="_blank">Treehouse</a> student or an active member of a Developer community, you know exactly how it feels.</p>
+        <p>You are welcome to look at my work section and contact me for feedback</p>
       </div>
     </div>
 
@@ -55,28 +57,28 @@
           <i class="fab fa-html5"></i>
           <div class="card__skill--content">
             <h2 class="skills__title">HTML5</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt facilis laboriosam, architecto ratione ex nisi.</p>
+            <p>Good understanding of web markup, web standards and cross-browser compatibility. Assure that all user input is validated before submitting to back-end.</p>
           </div>
         </div>
         <div class="card__skill">
           <i class="fab fa-css3-alt"></i>
           <div class="card__skill--content">
             <h2 class="skills__title">CSS3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt facilis laboriosam, architecto ratione ex nisi.</p>
+            <p>Basic understanding of server-side pre-processing platforms, such as Sass and less. Assure that all user input is validated before submitting to back-end.</p>
           </div>
         </div>
         <div class="card__skill">
           <i class="fab fa-js-square"></i>
           <div class="card__skill--content">
             <h2 class="skills__title">JavaScript</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt facilis laboriosam, architecto ratione ex nisi.</p>
+            <p>Fair understanding of JavaScript programming and DOM manipulation. Ability to keep up with what is happening in the industry</p>
           </div>
         </div>
         <div class="card__skill">
           <i class="fab fa-wordpress"></i>
           <div class="card__skill--content">
             <h2 class="skills__title">Wordpress</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt facilis laboriosam, architecto ratione ex nisi.</p>
+            <p>Able to convert any HTML template into a living breathing WordPress theme. Create Custom Post Types and Custom Fields </p>
           </div>
         </div>
       </div>
@@ -150,7 +152,28 @@
     </div>        
     
     <footer>
-      <span>&copy;2020 Giuseppe Brandi Portfolio</span>
+      <span>&copy;2020 Giuseppe Brandi - Portfolio</span>
     </footer>
+
+    <div id="my-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Contact me</h2>
+        </div>
+        <div class="modal-body">
+          <span class="close">&times;</span>
+          <p>Please feel free to get in touch with me by email or alternatively by social media</p>
+          <a href=""><p class="email">info@thesuccesscreed.co.uk</p></a>
+          <div>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+
+    <script src="js/App.js"></script>
   </body>
 </html>

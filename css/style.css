@@ -35,13 +35,27 @@ a:hover {
 /* --- Banner Section --- */
 
 .intro {
-  margin: auto;
-  padding: 0 1em 1em; 
+  margin: 0 auto;
+  padding: 0 1em 1em;
 }
 .intro p {
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: justify;
   margin-top: 0; 
+}
+@media (min-width: 768px) {
+  .intro p {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 1200px) {
+  .intro p {
+    font-size: 1.2em;
+  }
+}
+.strapline {
+  font-weight: 500;
+  color: #f0db4f;
 }
 .banner {
   position: relative;
@@ -82,10 +96,11 @@ a:hover {
 }
 @media (max-width: 575px) {
   .banner {
-    height: 340px; 
+    height: 340px;
+    padding: 3em 0; 
   }
   .banner h1 {
-    font-size: 3.4em; 
+    font-size: 2.7em; 
   } 
 }
 .img-featured {
@@ -126,6 +141,7 @@ a:hover {
 }
 .name {
   font-size: 1.25em;
+  font-weight: 700;
   margin: 0;
 }
 @media (min-width: 768px) {
@@ -139,11 +155,13 @@ a:hover {
   text-align: center;
   padding: 10px 15px;
 }
+.name a,
 .name a:hover {
   color: #0083b0;
 }
 .main-nav {
   margin-top: 5px;
+  font-weight: 500;
 }
 @media (min-width: 768px) {
   .main-nav {
@@ -182,6 +200,11 @@ a:hover {
 .about__img {
   width: 100%;
   display: block;
+  margin-top: 10px;
+}
+.treehouse {
+  color: #5fcf80;
+  font-weight: 400;
 }
 
 
@@ -230,6 +253,12 @@ a:hover {
 } 
 .skills__title {
   margin-top: 0;
+}
+.fa-facebook-square,
+.fa-twitter-square {
+  color: #227eb4;
+  font-size: 3em;
+  margin: 0 5px 20px 5px;
 }
 
 
@@ -282,7 +311,7 @@ a:hover {
 footer {
   padding: 2em 0 0;
   height: 100px;
-  background-color: #eee;
+  background-color: #0083b0;
   margin-top: 6em;
   position: relative; 
 }
@@ -293,8 +322,11 @@ footer::after {
   height: 50px;
   position: absolute;
   transform: skewY(-2deg);
-  background-color: #eee;
+  background-color: #0083b0;
   top: -25px; 
+}
+footer span {
+  color: #ffffff;
 }
 
 
@@ -304,4 +336,77 @@ footer::after {
   content: " ";
   display: table;
   clear: both;
+}
+
+
+/* --- Modal --- */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  margin: 10% auto;
+  width: 90%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+@media (min-width: 768px) {
+  .modal-content {
+    width: 50%;
+  }
+}
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0;
+}
+.modal-header {
+  background: #0083b0;
+  padding: 15px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.modal-body {
+  padding: 10px 20px;
+  background: #fff;
+}
+.modal-footer {
+  background: #0083b0;
+  padding: 1.3em;
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.close {
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.email {
+  color: #227eb4;
+  font-weight: 700;
+}
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
