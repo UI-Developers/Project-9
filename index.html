@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,22 +14,24 @@
     <header class="main-header">
       <div class="container clearfix">
         <h1 class="name"><a href="#">UI-Developers</a></h1>
-        <ul class="main-nav">
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a id="modal-btn" href="#">Contact</a></li>
-        </ul>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="#about-link">About Me</a></li>
+            <li><a href="#skills-link">Skills</a></li>
+            <li><a href="#work-link">Work</a></li>
+            <li><a id="modal-btn" href="#">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header><!--/.main-header-->   
 
     <div class="banner">
-      <img class="img-featured" src="img/Giuseppe2.jpg" alt="Giuseppe Brandi">
+      <img class="img-featured" src="img/Giuseppe.jpg" alt="Giuseppe Brandi">
       <h1>Giuseppe Brandi</h1>
       <p class="strapline">Passionate | Flexible | Self Motivated</p>
     </div>
 
-    <div class="intro">
+    <div class="intro" id="about-link">
       <h1>About Me</h1>
     </div>
 
@@ -41,13 +43,14 @@
       </picture>
       <div class="intro">
         <p>Hi, my name is Giuseppe and I have been learning Web Development since October 2012.</p>
-        <p>I consider myself more a self-taught student than a Front-End Developer as there is still a lot to learn (it is not imposter syndrome); however, I am passionate about coding and Web Design.</p> 
-        <p>I love to see concepts and ideas turning into shapes and colours, people freely sharing their talents with the world, and dreams becoming reality. Whether you are a <a class="treehouse" href="https://teamtreehouse.com" target="_blank">Treehouse</a> student or an active member of a Developer community, you know exactly how it feels.</p>
-        <p>You are welcome to look at my work section and contact me for feedback</p>
+        <p>I am very passionate about coding, Web Design, and I am a self-taught Front-End Web Developer.</p> 
+        <p>I love to see concepts and ideas turning into shapes and colours, people freely sharing their talents with the world, and dreams becoming reality. If you are a <a class="treehouse" href="https://teamtreehouse.com" target="_blank">Treehouse</a> student or an active member of a Developer community, you probably know how it feels.</p>
+        <p>There is still a lot to learn and a lot to master to be job ready, but it is an exciting journey.</p>
+        <p>You are more than welcome to look at my work section and contact me for feedback.</p>
       </div>
     </div>
 
-    <div class="wrapper__myskills">
+    <div class="wrapper__myskills" id="skills-link">
     <div class="intro">
       <h1>My Skills</h1>
     </div>
@@ -84,7 +87,7 @@
       </div>
     </div>
     
-    <div class="intro">
+    <div class="intro" id="work-link">
       <h1>My Work</h1>
     </div>
     
@@ -123,7 +126,7 @@
       <div class="card">
         <img src="img/furniture.jpg" alt="Furniture Store" class="card__project--image">
         <h1>Furniture Store</h1>
-        <p>This project is built with Bootstrap framework. It is responsive, slick and functional. One of the biggest advantages of using Bootstrap was development speed.</p>
+        <p>This project home page is built with Bootstrap framework. It is responsive, slick and functional. One of the biggest advantages of using Bootstrap was development speed.</p>
         <div class="btn-info">
           <a class="link-1" href="https://ui-developers.github.io/furniture-store/" target="_blank">Visit Site</a>
           <a class="link-2" href="https://github.com/UI-Developers/furniture-store" target="_blank">See Code</a>
@@ -152,7 +155,7 @@
     </div>        
     
     <footer>
-      <span>&copy;2020 Giuseppe Brandi - Portfolio</span>
+      <span>&copy;2020 UI-Developers</span>
     </footer>
 
     <div id="my-modal" class="modal">
@@ -162,18 +165,23 @@
           <h2>Contact me</h2>
         </div>
         <div class="modal-body">
-          <span class="close">&times;</span>
-          <p>Please feel free to get in touch with me by email or alternatively by social media</p>
-          <a href=""><p class="email">info@thesuccesscreed.co.uk</p></a>
+          <p>Please feel free to get in touch with me by email or by social media.</p>
+          <a href="mailto:info@thesuccesscreed.co.uk"><p class="email">info@thesuccesscreed.co.uk</p></a>
           <div>
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.facebook.com/giuseppe.brandi.543" target="_blank">
+              <svg class="facebook-icon" height="67px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.319h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.319z   M3,4h60v60H3V4z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#227eb4;"/></svg>
+            </a>
+
+            <a href="https://twitter.com/thesuccesscreed" target="_blank">
+              <svg class="twitter-icon" height="67px" id="Layer_2" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.268-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.098,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.466  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.975-3.646,1.525-5.616,1.568  C19.775,43.256,19,43.341,19,43.404c0,0.212,2.557,1.398,4.044,1.864c4.463,1.377,9.765,0.784,13.746-1.567  c2.829-1.674,5.657-5,6.978-8.22c0.713-1.716,1.425-4.852,1.425-6.355c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.679,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.044c-1.781,0.637-2.033,0.552-1.152-0.401  c0.649-0.678,1.425-1.907,1.425-2.268c0-0.062-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M3,4h60v60H3V4z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#227eb4;"/></svg>
+            </a>
           </div>
         </div>
         <div class="modal-footer"></div>
       </div>
     </div>
-
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/App.js"></script>
   </body>
 </html>

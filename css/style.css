@@ -36,7 +36,7 @@ a:hover {
 
 .intro {
   margin: 0 auto;
-  padding: 0 1em 1em;
+  padding: 0 0 1em;
 }
 .intro p {
   font-size: 1em;
@@ -55,12 +55,12 @@ a:hover {
 }
 .strapline {
   font-weight: 500;
-  color: #f0db4f;
+  color: #ffffff;
 }
 .banner {
   position: relative;
   height: 550px;
-  background: linear-gradient(#2193b0, #6dd5ed), url("../img/bg.jpg") no-repeat;
+  background: linear-gradient(#2193b0, #6dd5ed), url("../img/bg2.jpg") no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
   text-align: center;
@@ -212,7 +212,7 @@ a:hover {
 
 .wrapper__myskills {
   width: 100%;
-  padding: 0.5em 0 2em 0;
+  padding: .1em 0 2em 0;
   background: linear-gradient(rgba(0, 180, 219, .1), rgba(0, 131, 176, .1));
   background-blend-mode: multiply;
   background-size: cover;
@@ -254,11 +254,9 @@ a:hover {
 .skills__title {
   margin-top: 0;
 }
-.fa-facebook-square,
-.fa-twitter-square {
-  color: #227eb4;
-  font-size: 3em;
-  margin: 0 5px 20px 5px;
+.facebook-icon,
+.twitter-icon {
+  width: 3em;
 }
 
 
@@ -357,7 +355,7 @@ footer span {
   width: 90%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
   animation-name: modalopen;
-  animation-duration: var(--modal-duration);
+  animation-duration: 1s;
 }
 @media (min-width: 768px) {
   .modal-content {
@@ -374,6 +372,7 @@ footer span {
   color: #fff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  position: relative;
 }
 .modal-body {
   padding: 10px 20px;
@@ -391,6 +390,9 @@ footer span {
   float: right;
   font-size: 30px;
   color: #fff;
+  position: absolute;
+  top: 0;
+  right: 10px;
 }
 .close:hover,
 .close:focus {
@@ -409,4 +411,11 @@ footer span {
   to {
     opacity: 1;
   }
+}
+.reveal-item {
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+}
+.reveal-item--is-visible {
+  opacity: 1;
 }
